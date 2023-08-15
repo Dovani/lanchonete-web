@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete Delivery</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="body">
+    <section class="section-title">
+        <h1 class="titulo_section"> CARDÁPIO </h1>
+    </section>
+    <section class="section-cardapio">
+        <div>
+            <p><strong> PRINCIPAIS </strong></p>
+            <label><input type="number" id="input-cafe" data-nome="cafe" data-preco="3.00" value="0"> CAFÉ - R$ 3,00</label>
+            <label><input type="number" id="input-suco" data-nome="suco" data-preco="6.20" value="0"> SUCO NATURAL - R$ 6,20</label>
+            <label><input type="number" id="input-sanduiche" data-nome="sanduiche" data-preco="6.50" value="0"> SANDUÍCHE - R$ 6,50</label>
+            <label><input type="number" id="input-salgado" data-nome="salgado" data-preco="7.25" value="0"> SALGADO - R$ 7,25</label>
+            <label><input type="number" id="input-combo1" data-nome="combo1" data-preco="9.50" value="0"> 1 SUCO e 1 SANDUÍCHE - R$ 9,50</label>
+            <label><input type="number" id="input-combo2" data-nome="combo2" data-preco="7.50" value="0"> 1 CAFÉ e 1 SANDUÍCHE - R$ 7,50</label>
+        </div>
+    </section>
+    <section class="section-extra">
+        <div>
+            <p><strong> EXTRAS </strong></p>
+            <label><input type="number" id="input-chantily" data-nome="chantily" data-preco="1.50" value="0"> CHANTILY (SÓ CAFÉ) - R$ 1,50</label>
+            <label><input type="number" id="input-queijo" data-nome="queijo" data-preco="2.00" value="0"> QUEIJO (SÓ SANDUÍCHE) - R$ 2,00</label>
+        </div>
+    </section>
+    <section class="section-pay">
+        <div class="div-payments">
+            <p><strong> FORMA DE PAGAMENTO </strong></p>
+            <label>
+                <input type="radio" name="forma-pagamento" value="dinheiro">
+                DINHEIRO [5% DE DESCONTO]
+              </label>
+              <label>
+                <input type="radio" name="forma-pagamento" value="debito">
+                DÉBITO
+              </label>
+              <label>
+                <input type="radio" name="forma-pagamento" value="credito">
+                CRÉDITO [+ 5% DE ACRÉSCIMO]
+              </label>
+        </div>
+    </section>
+    <section class="section-total">
+        <div>
+            <p><strong> TOTAL </strong></p>
+            <ul id="lista"></ul>
+            <p id="valor-total"><strong> TOTAL DA COMPRA: R$ 0,00 </strong></p>
+            <button class="botao-confirm" id="botao-confirm"><strong> CONFIRMAR COMPRA </strong></button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

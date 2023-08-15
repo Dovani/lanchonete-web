@@ -1,0 +1,15 @@
+const inputCafe = document.getElementById('input-cafe');
+const inputSuco = document.getElementById('input-suco');
+const inputSanduiche = document.getElementById('input-sanduiche');
+const inputSalgado = document.getElementById('input-salgado');
+const inputCombo1 = document.getElementById('input-combo1');
+const inputCombo2 = document.getElementById('input-combo2');
+
+carrinho = new Map([
+        [`Cafe,${parseInt(inputCafe.value)}`,
+        `Suco,${parseInt(inputSuco.value)}`,
+        `Sanduiche,${parseInt(inputSanduiche.value)}`,
+        `Salgado,${parseInt(inputSalgado.value)}`,
+        `Combo1,${parseInt(inputCombo1.value)}`,
+        `Combo2,${parseInt(inputCombo2.value)}`]
+    ]);
