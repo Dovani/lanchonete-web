@@ -53,7 +53,7 @@ function atualizarCarrinho() { // FUNÇÃO PARA ATUALIZAR OS ITENS DO CARRINHO
 
 function atualizarValorTotal() {
     const valorTotal = calcularValorDaCompra(metodo, carrinho); // FUNÇÃO ABAIXO PARA CALCULAR TOTAL
-    valorTotalOutput.textContent = ` TOTAL DA COMPRA: R$ ${valorTotal} `; // SUBSTITUI A STRING DO PARAMETRO NO HTML
+    valorTotalOutput.textContent = ` TOTAL DA COMPRA: ${valorTotal} `; // SUBSTITUI A STRING DO PARAMETRO NO HTML
 }
 
 // SOLUÇÃO IMPLEMENTADA NO DESAFIO TÉCNICO //
