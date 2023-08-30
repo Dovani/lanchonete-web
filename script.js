@@ -106,7 +106,7 @@ function calcularValorDaCompra(metodoDePagamento, itens){
             valor_total;
             break;
         case 'credito':
-            valor_total = valor_total * 1.05;
+            valor_total = valor_total * 1.03;
             break;
         default:    // Quinta verificação, retorna erro se não for uma forma de pagamento válida.
             return 'Forma de pagamento inválida!';
