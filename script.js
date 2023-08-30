@@ -106,7 +106,7 @@ function calcularValorDaCompra(metodoDePagamento, itens){
             valor_total;
             break;
         case 'credito':
-            valor_total = valor_total * 1.03;
+            valor_total = valor_total * 1.05;
             break;
         default:    // Quinta verificação, retorna erro se não for uma forma de pagamento válida.
             return 'Forma de pagamento inválida!';
@@ -120,7 +120,7 @@ function preco_por_item(item){   // Nova função pra registrar os preços dos p
         case 'cafe':
             return 3.00;
         case 'chantily':
-            return 1.50;R
+            return 1.50;
         case 'suco':
             return 6.20;
         case 'sanduiche':
